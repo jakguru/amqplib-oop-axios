@@ -41,10 +41,24 @@
  *                                        └──────────────────────────────────────────┘
  */
 
-export type * from './src/adapter'
-export type * from './src/worker'
+import type { AmqplibAxiosAdapterManagerConfiguration } from './src/adapter'
+import type {
+  AmqplibAxiosWorkerQueueConfig,
+  AmpqlibAxiosWorkerQueueConnectionConfiguration,
+  AxiosInterceptorManagers,
+} from './src/worker'
 import { AmqplibAxiosAdapterManager } from './src/adapter'
 import { AmqplibAxiosWorker } from './src/worker'
 
-export { AmqplibAxiosAdapterManager, AmqplibAxiosWorker }
-export default { AmqplibAxiosAdapterManager, AmqplibAxiosWorker }
+export {
+  AmqplibAxiosAdapterManager,
+  AmqplibAxiosWorker,
+  AmqplibAxiosAdapterManagerConfiguration,
+  AmqplibAxiosWorkerQueueConfig,
+  AmpqlibAxiosWorkerQueueConnectionConfiguration,
+  AxiosInterceptorManagers,
+}
+export default {
+  AmqplibAxiosAdapterManager,
+  AmqplibAxiosWorker,
+}
