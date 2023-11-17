@@ -38,7 +38,7 @@ jobs:
         with:
           node-version: 16.17.1
       - name: Install Dependancies
-        run: npm ci
+        run: npm install
       - name: Generate Docs
         run: npm run docs
       - name: Upload artifact
