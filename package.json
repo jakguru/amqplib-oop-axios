@@ -1,6 +1,6 @@
 {
-  "name": "amqplib-oop-axios",
-  "version": "1.0.0",
+  "name": "@jakguru/amqplib-oop-axios",
+  "version": "1.0.1",
   "description": "A client and server allowing HTTP requests to be made from dedicated amqplib consumers.",
   "scripts": {
     "test": "node -r ts-node/register bin/test.ts",

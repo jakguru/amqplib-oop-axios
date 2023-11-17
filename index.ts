@@ -41,5 +41,10 @@
  *                                        └──────────────────────────────────────────┘
  */
 
-export * from './src/adapter'
-export * from './src/worker'
+export type * from './src/adapter'
+export type * from './src/worker'
+import { AmqplibAxiosAdapterManager } from './src/adapter'
+import { AmqplibAxiosWorker } from './src/worker'
+
+export { AmqplibAxiosAdapterManager, AmqplibAxiosWorker }
+export default { AmqplibAxiosAdapterManager, AmqplibAxiosWorker }
