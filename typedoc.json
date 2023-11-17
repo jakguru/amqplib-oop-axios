@@ -1,0 +1,77 @@
+{
+  "entryPoints": [
+    "index.ts"
+  ],
+  "out": "docs",
+  "plugin": [
+    "typedoc-plugin-coverage"
+  ],
+  "coverageLabel": "Covers",
+  "excludeExternals": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeInternal": true,
+  "readme": "readme.docs.md",
+  "theme": "default",
+  "hideGenerator": true,
+  "includeVersion": false,
+  "searchInComments": true,
+  "validation": {
+    "notExported": true,
+    "invalidLink": true,
+    "notDocumented": true
+  },
+  "externalSymbolLinkMappings": {
+    "global": {
+      "Boolean": "https://developer.mozilla.org/en-US/docs/Glossary/Boolean/JavaScript",
+      "String": "https://developer.mozilla.org/en-US/docs/Glossary/String",
+      "Void": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void",
+      "Number": "https://developer.mozilla.org/en-US/docs/Glossary/Number",
+      "Set": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+      "Error": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error"
+    },
+    "typescript": {
+      "Boolean": "https://developer.mozilla.org/en-US/docs/Glossary/Boolean/JavaScript",
+      "String": "https://developer.mozilla.org/en-US/docs/Glossary/String",
+      "Void": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void",
+      "Number": "https://developer.mozilla.org/en-US/docs/Glossary/Number",
+      "Set": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+      "Error": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error"
+    },
+    "events": {
+      "EventEmitter": "https://nodejs.org/docs/latest-v16.x/api/events.html#class-eventemitter",
+      "EventEmitter.on": "https://nodejs.org/docs/latest-v16.x/api/events.html#emitteroneventname-listener",
+      "EventEmitter.once": "https://nodejs.org/docs/latest-v16.x/api/events.html#emitteronceeventname-listener",
+      "EventEmitter.off": "https://nodejs.org/docs/latest-v16.x/api/events.html#emitteroffeventname-listener",
+      "EventEmitter.removeAllListeners": "https://nodejs.org/docs/latest-v16.x/api/events.html#emitterremovealllistenerseventname"
+    },
+    "EventEmitter": {
+      "on": "https://nodejs.org/docs/latest-v16.x/api/events.html#emitteroneventname-listener",
+      "once": "https://nodejs.org/docs/latest-v16.x/api/events.html#emitteronceeventname-listener",
+      "off": "https://nodejs.org/docs/latest-v16.x/api/events.html#emitteroffeventname-listener",
+      "removeAllListeners": "https://nodejs.org/docs/latest-v16.x/api/events.html#emitterremovealllistenerseventname"
+    },
+    "@types/luxon": {
+      "DateTime": "https://moment.github.io/luxon/api-docs/index.html#datetime"
+    },
+    "luxon": {
+      "DateTime": "https://moment.github.io/luxon/api-docs/index.html#datetime"
+    },
+    "@jakguru/amqplib-oop": {
+      "Connection": "https://jakguru.github.io/amqplib-oop/classes/Connection.html",
+      "ConnectionConstructorOptions": "https://jakguru.github.io/amqplib-oop/interfaces/ConnectionConstructorOptions.html",
+    },
+    "@jakguru/amqplib-oop-ratelimiter": {
+      "RateLimitedQueueConnectionConfiguration": "https://jakguru.github.io/amqplib-oop-ratelimiter/interfaces/RateLimitedQueueConnectionConfiguration.html",
+      "RateLimitedQueueConfig": "https://jakguru.github.io/amqplib-oop-ratelimiter/interfaces/RateLimitedQueueConfig.html"
+    },
+    "axios": {
+      "AxiosAdapter": "https://github.com/axios/axios/blob/v1.x/lib/adapters/README.md",
+      "CreateAxiosDefaults": "https://axios-http.com/docs/config_defaults",
+      "AxiosDefaults": "https://axios-http.com/docs/config_defaults",
+      "AxiosInterceptorManager": "https://axios-http.com/docs/interceptors",
+      "InternalAxiosRequestConfig": "https://axios-http.com/docs/req_config",
+      "AxiosResponse": "https://axios-http.com/docs/res_schema"
+    }
+  }
+}
