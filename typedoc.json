@@ -21,6 +21,9 @@
     "invalidLink": true,
     "notDocumented": true
   },
+  "navigationLinks": {
+    "Github Repository": "https://github.com/jakguru/amqplib-oop-axios"
+  },
   "externalSymbolLinkMappings": {
     "global": {
       "Boolean": "https://developer.mozilla.org/en-US/docs/Glossary/Boolean/JavaScript",

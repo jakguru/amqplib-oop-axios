@@ -1,6 +1,6 @@
 {
   "name": "@jakguru/amqplib-oop-axios",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "A client and server allowing HTTP requests to be made from dedicated amqplib consumers.",
   "main": "dist/index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "lint": "eslint . --ext=.ts",
     "format": "prettier --write ."
   },
-  "author": "Jak Giveon <jak@feriority.com>",
+  "author": "Jak Giveon <jak@jak.guru>",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.22.9",

@@ -1,5 +1,5 @@
 import { test } from '@japa/runner'
-import { AmqplibAxiosWorker, AmqplibAxiosAdapterManager } from '../'
+import { AmqplibAxiosWorker, AmqplibAxiosAdapterManager, AmqpAxiosProxiedClient } from '../'
 import { Connection } from '@jakguru/amqplib-oop'
 import type { ConnectionConstructorOptions } from '@jakguru/amqplib-oop'
 import axios from 'axios'
@@ -120,6 +120,26 @@ test.group('axios', (group) => {
     const instance = axios.create({
       adapter: persistentAdapterManager!.adapter,
     })
+    const getResponse = await instance.get('/get')
+    assert.equal(getResponse.status, 200)
+    console.log(getResponse)
+    const postResponse = await instance.post('/post', { data: 'test' })
+    assert.equal(postResponse.status, 200)
+    console.log(postResponse)
+    const putResponse = await instance.put('/put', { data: 'test' })
+    assert.equal(putResponse.status, 200)
+    console.log(putResponse)
+    const patchResponse = await instance.patch('/patch', { data: 'test' })
+    assert.equal(patchResponse.status, 200)
+    console.log(patchResponse)
+    await persistentWorker!.stop()
+  }).timeout(59999)
+
+  test('can make requests and get responses via client', async ({ assert }) => {
+    assert.instanceOf(persistentWorker, AmqplibAxiosWorker)
+    assert.instanceOf(persistentConnection, Connection)
+    await persistentWorker!.start()
+    const instance = new AmqpAxiosProxiedClient('test', persistentConnection!)
     const getResponse = await instance.get('/get')
     assert.equal(getResponse.status, 200)
     console.log(getResponse)
