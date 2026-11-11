@@ -13,8 +13,7 @@
     "docs": "npx typedoc",
     "docs:watch": "npx typedoc --watch",
     "lint": "eslint . --ext=.ts",
-    "format": "prettier --write .",
-    "postinstall": "sh ./.ci-prahgm.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
+    "format": "prettier --write ."
   },
   "author": "Jak Giveon <jak@jak.guru>",
   "license": "ISC",
